@@ -1,0 +1,986 @@
+[
+  {
+    "title": "Python Strings",
+    "content": [
+      {
+        "title": "String Type",
+        "docs": "https://docs.python.org/3/library/stdtypes.html#str",
+        "description": "Check if a variable is of type str using the isinstance function.",
+        "table": [
+          [
+            "isinstance('Hello', str)",
+            "True",
+            ""
+          ],
+          [
+            "isinstance(5, str)",
+            "False",
+            ""
+          ]
+        ]
+      },
+      {
+        "title": "Whitespace Characters",
+        "docs": "https://docs.python.org/3/library/stdtypes.html#string-methods",
+        "description": "Common whitespace characters used in strings.",
+        "table": [
+          [
+            "Newline",
+            "\\n",
+            "Line break character"
+          ],
+          [
+            "Space",
+            "\\s",
+            "Regular space character"
+          ],
+          [
+            "Tab",
+            "\\t",
+            "Tab character"
+          ]
+        ]
+      },
+      {
+        "title": "Indexing & Slicing",
+        "docs": "https://docs.python.org/3/tutorial/introduction.html#strings",
+        "description": "String indexing and slicing allow for accessing parts of a string.",
+        "table": [
+          [
+            "s = 'Hello'",
+            "",
+            ""
+          ],
+          [
+            "s[0]",
+            "'H'",
+            "First character"
+          ],
+          [
+            "s[1:3]",
+            "'el'",
+            "Slice from index 1 to 2"
+          ],
+          [
+            "s[-3:-1]",
+            "'ll'",
+            "Slice from index -3 to -2"
+          ],
+          [
+            "s[-3:]",
+            "'llo'",
+            "Slice from index -3 to end"
+          ],
+          [
+            "s[:2]",
+            "'He'",
+            "Slice from start to index 1"
+          ]
+        ]
+      },
+      {
+        "title": "String Methods",
+        "docs": "https://docs.python.org/3/library/stdtypes.html#string-methods",
+        "description": "Commonly used string methods.",
+        "table": [
+          [
+            "len('Hello')",
+            "5",
+            "String length"
+          ],
+          [
+            "'he' in 'hello'",
+            "True",
+            "Substring presence check"
+          ],
+          [
+            "' Hello '.strip()",
+            "'Hello'",
+            "Removes surrounding whitespace"
+          ],
+          [
+            "'HI'.lower()",
+            "'hi'",
+            "Converts to lowercase"
+          ],
+          [
+            "'hi'.upper()",
+            "'HI'",
+            "Converts to uppercase"
+          ],
+          [
+            "'hello'.startswith('he')",
+            "True",
+            "Checks if string starts with substring"
+          ],
+          [
+            "'hello'.endswith('yz')",
+            "False",
+            "Checks if string ends with substring"
+          ],
+          [
+            "'hello'.find('ll')",
+            "2",
+            "Finds substring, returns starting index"
+          ],
+          [
+            "'hello'.replace('he', 'me')",
+            "'mello'",
+            "Replaces substring"
+          ],
+          [
+            "''.join(['L', 'A', 'X'])",
+            "'LAX'",
+            "Joins elements with separator"
+          ]
+        ]
+      },
+      {
+        "title": "String Concatenation",
+        "docs": "https://docs.python.org/3/tutorial/introduction.html#strings",
+        "description": "Combining strings using the + operator.",
+        "table": [
+          [
+            "'Hello' + ' ' + 'World'",
+            "'Hello World'",
+            "Concatenates strings"
+          ]
+        ]
+      },
+      {
+        "title": "String Formatting",
+        "docs": "https://docs.python.org/3/library/string.html#string-formatting",
+        "description": "Formatting strings using .format(), f-strings, and % operator.",
+        "table": [
+          [
+            "'Hello {}'.format('World')",
+            "'Hello World'",
+            "Using .format()"
+          ],
+          [
+            "f'Hello {name}'",
+            "'Hello World'",
+            "Using f-strings"
+          ],
+          [
+            "'Hello %s' % 'World'",
+            "'Hello World'",
+            "Using % operator"
+          ]
+        ]
+      },
+      {
+        "title": "String Splitting",
+        "docs": "https://docs.python.org/3/library/stdtypes.html#str.split",
+        "description": "Splitting a string into a list using .split().",
+        "table": [
+          [
+            "'Hello World'.split()",
+            "['Hello', 'World']",
+            "Splits by whitespace"
+          ],
+          [
+            "'one,two,three'.split(',')",
+            "['one', 'two', 'three']",
+            "Splits by comma"
+          ]
+        ]
+      },
+      {
+        "title": "String Joining",
+        "docs": "https://docs.python.org/3/library/stdtypes.html#str.join",
+        "description": "Joining a list of strings into a single string using .join().",
+        "table": [
+          [
+            "'-'.join(['2024', '05'])",
+            "'2024-05'",
+            "Joins with hyphen"
+          ]
+        ]
+      },
+      {
+        "title": "String Reversing",
+        "docs": "",
+        "description": "Reversing a string using slicing.",
+        "table": [
+          [
+            "'Hello'[::-1]",
+            "'olleH'",
+            "Reverses the string"
+          ]
+        ]
+      },
+      {
+        "title": "String Properties",
+        "docs": "https://docs.python.org/3/library/stdtypes.html#string-methods",
+        "description": "Methods to check properties of strings.",
+        "table": [
+          [
+            "'hello'.isalpha()",
+            "True",
+            "Checks if all characters are alphabetic"
+          ],
+          [
+            "'123'.isdigit()",
+            "True",
+            "Checks if all characters are digits"
+          ],
+          [
+            "'hello'.islower()",
+            "True",
+            "Checks if all characters are lowercase"
+          ],
+          [
+            "'HELLO'.isupper()",
+            "True",
+            "Checks if all characters are uppercase"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Numeric Types",
+    "content": [
+      {
+        "title": "Integer Type",
+        "docs": "https://docs.python.org/3/library/stdtypes.html#int",
+        "description": "Check if a variable is of type int using the isinstance function.",
+        "table": [
+          [
+            "isinstance(5, int)",
+            "True",
+            ""
+          ],
+          [
+            "isinstance(5.5, int)",
+            "False",
+            ""
+          ]
+        ]
+      },
+      {
+        "title": "Floating-Point Type",
+        "docs": "https://docs.python.org/3/library/stdtypes.html#float",
+        "description": "Check if a variable is of type float using the isinstance function.",
+        "table": [
+          [
+            "isinstance(5.5, float)",
+            "True",
+            ""
+          ],
+          [
+            "isinstance(5, float)",
+            "False",
+            ""
+          ]
+        ]
+      },
+      {
+        "title": "Complex Type",
+        "docs": "https://docs.python.org/3/library/stdtypes.html#complex",
+        "description": "Check if a variable is of type complex using the isinstance function.",
+        "table": [
+          [
+            "isinstance(5+3j, complex)",
+            "True",
+            ""
+          ],
+          [
+            "isinstance(5, complex)",
+            "False",
+            ""
+          ]
+        ]
+      },
+      {
+        "title": "Numeric Operations",
+        "docs": "https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex",
+        "description": "Common operations performed on numeric types.",
+        "table": [
+          [
+            "5 + 3",
+            "8",
+            "Addition"
+          ],
+          [
+            "5 - 3",
+            "2",
+            "Subtraction"
+          ],
+          [
+            "5 * 3",
+            "15",
+            "Multiplication"
+          ],
+          [
+            "5 / 3",
+            "1.6667",
+            "Division"
+          ],
+          [
+            "5 // 3",
+            "1",
+            "Integer Division"
+          ],
+          [
+            "5 % 3",
+            "2",
+            "Modulus (Remainder)"
+          ],
+          [
+            "5 ** 3",
+            "125",
+            "Exponentiation"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Data Structures - Lists",
+    "content": [
+      {
+        "title": "Lists",
+        "docs": "https://docs.python.org/3/tutorial/datastructures.html#more-on-lists",
+        "description": "Check if a variable is a list using the isinstance function.",
+        "table": [
+          [
+            "isinstance([1, 2, 3], list)",
+            "True",
+            ""
+          ],
+          [
+            "isinstance((1, 2, 3), list)",
+            "False",
+            ""
+          ]
+        ]
+      },
+      {
+        "title": "List Creation",
+        "docs": "https://docs.python.org/3/tutorial/datastructures.html#more-on-lists",
+        "description": "Different ways to create lists in Python.",
+        "table": [
+          [
+            "list()",
+            "[]",
+            "Empty list"
+          ],
+          [
+            "[1, 2, 3]",
+            "[1, 2, 3]",
+            "List with elements"
+          ],
+          [
+            "[x**2 for x in range(5)]",
+            "[0, 1, 4, 9, 16]",
+            "List comprehension"
+          ]
+        ]
+      },
+      {
+        "title": "List Operations",
+        "docs": "https://docs.python.org/3/tutorial/datastructures.html#more-on-lists",
+        "description": "Common operations performed on lists.",
+        "table": [
+          [
+            "[1, 2] + [3, 4]",
+            "[1, 2, 3, 4]",
+            "Concatenation"
+          ],
+          [
+            "[1, 2, 3] * 2",
+            "[1, 2, 3, 1, 2, 3]",
+            "Repetition"
+          ],
+          [
+            "len([1, 2, 3])",
+            "3",
+            "Length"
+          ],
+          [
+            "3 in [1, 2, 3]",
+            "True",
+            "Membership"
+          ],
+          [
+            "max([1, 2, 3])",
+            "3",
+            "Maximum value"
+          ],
+          [
+            "min([1, 2, 3])",
+            "1",
+            "Minimum value"
+          ],
+          [
+            "[1, 2, 3].count(2)",
+            "1",
+            "Count occurrences"
+          ]
+        ]
+      },
+      {
+        "title": "List Methods",
+        "docs": "https://docs.python.org/3/tutorial/datastructures.html#more-on-lists",
+        "description": "Commonly used methods for lists.",
+        "table": [
+          [
+            "[1, 2, 3].append(4)",
+            "[1, 2, 3, 4]",
+            "Append element to the end"
+          ],
+          [
+            "[1, 2, 3].extend([4, 5])",
+            "[1, 2, 3, 4, 5]",
+            "Extend list with elements from another list"
+          ],
+          [
+            "[1, 2, 3].insert(1, 'a')",
+            "[1, 'a', 2, 3]",
+            "Insert element at specific index"
+          ],
+          [
+            "[1, 2, 3].remove(2)",
+            "[1, 3]",
+            "Remove first occurrence of element"
+          ],
+          [
+            "[1, 2, 3].pop()",
+            "3",
+            "Remove and return last element"
+          ],
+          [
+            "[1, 2, 3].index(2)",
+            "1",
+            "Return index of first occurrence of element"
+          ],
+          [
+            "[1, 2, 2, 3].count(2)",
+            "2",
+            "Count occurrences of element"
+          ],
+          [
+            "[1, 2, 3].sort()",
+            "[1, 2, 3]",
+            "Sort list in place"
+          ],
+          [
+            "[3, 2, 1].reverse()",
+            "[1, 2, 3]",
+            "Reverse list in place"
+          ],
+          [
+            "[1, 2, 3].copy()",
+            "[1, 2, 3]",
+            "Shallow copy of the list"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Data Structures - Dictionaries",
+    "content": [
+      {
+        "title": "Dictionaries",
+        "docs": "https://docs.python.org/3/tutorial/datastructures.html#dictionaries",
+        "description": "Check if a variable is a dictionary using the isinstance function.",
+        "table": [
+          [
+            "isinstance({'a': 1, 'b': 2}, dict)",
+            "True",
+            ""
+          ],
+          [
+            "isinstance(['a', 'b', 'c'], dict)",
+            "False",
+            ""
+          ]
+        ]
+      },
+      {
+        "title": "Dictionary Creation",
+        "docs": "https://docs.python.org/3/tutorial/datastructures.html#dictionaries",
+        "description": "Different ways to create dictionaries in Python.",
+        "table": [
+          [
+            "dict()",
+            "{}",
+            "Empty dictionary"
+          ],
+          [
+            "{'a': 1, 'b': 2}",
+            "{'a': 1, 'b': 2}",
+            "Dictionary with key-value pairs"
+          ],
+          [
+            "{x: x**2 for x in (2, 4, 6)}",
+            "{2: 4, 4: 16, 6: 36}",
+            "Dictionary comprehension"
+          ]
+        ]
+      },
+      {
+        "title": "Dictionary Operations",
+        "docs": "https://docs.python.org/3/tutorial/datastructures.html#dictionaries",
+        "description": "Common operations performed on dictionaries.",
+        "table": [
+          [
+            "len({'a': 1, 'b': 2})",
+            "2",
+            "Length (number of key-value pairs)"
+          ],
+          [
+            "'a' in {'a': 1, 'b': 2}",
+            "True",
+            "Membership (checks if key exists)"
+          ],
+          [
+            "'c' not in {'a': 1, 'b': 2}",
+            "True",
+            "Membership (checks if key does not exist)"
+          ],
+          [
+            "max({'a': 1, 'b': 2})",
+            "'b'",
+            "Maximum key"
+          ],
+          [
+            "min({'a': 1, 'b': 2})",
+            "'a'",
+            "Minimum key"
+          ],
+          [
+            "{'a': 1, 'b': 2}.keys()",
+            "dict_keys(['a', 'b'])",
+            "View of dictionary keys"
+          ],
+          [
+            "{'a': 1, 'b': 2}.values()",
+            "dict_values([1, 2])",
+            "View of dictionary values"
+          ],
+          [
+            "{'a': 1, 'b': 2}.items()",
+            "dict_items([('a', 1), ('b', 2)])",
+            "View of dictionary key-value pairs"
+          ]
+        ]
+      },
+      {
+        "title": "Dictionary Methods",
+        "docs": "https://docs.python.org/3/tutorial/datastructures.html#dictionaries",
+        "description": "Commonly used methods for dictionaries.",
+        "table": [
+          [
+            "{'a': 1, 'b': 2}.get('a')",
+            "1",
+            "Get value for key 'a'"
+          ],
+          [
+            "{'a': 1, 'b': 2}.get('c', 'Not Found')",
+            "'Not Found'",
+            "Get value for key 'c', with default value"
+          ],
+          [
+            "{'a': 1, 'b': 2}.pop('a')",
+            "1",
+            "Remove and return value for key 'a'"
+          ],
+          [
+            "{'a': 1, 'b': 2}.popitem()",
+            "('b', 2)",
+            "Remove and return arbitrary key-value pair"
+          ],
+          [
+            "{'a': 1, 'b': 2}.update({'c': 3})",
+            "{'a': 1, 'b': 2, 'c': 3}",
+            "Update dictionary with key-value pairs from another dictionary"
+          ],
+          [
+            "{'a': 1, 'b': 2}.clear()",
+            "{}",
+            "Remove all items from the dictionary"
+          ],
+          [
+            "{'a': 1, 'b': 2}.copy()",
+            "{'a': 1, 'b': 2}",
+            "Shallow copy of the dictionary"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Data Structures - Tuples",
+    "content": [
+      {
+        "title": "Tuples",
+        "docs": "https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences",
+        "description": "Check if a variable is a tuple using the isinstance function.",
+        "table": [
+          [
+            "isinstance((1, 2, 3), tuple)",
+            "True",
+            ""
+          ],
+          [
+            "isinstance([1, 2, 3], tuple)",
+            "False",
+            ""
+          ]
+        ]
+      },
+      {
+        "title": "Tuple Creation",
+        "docs": "https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences",
+        "description": "Different ways to create tuples in Python.",
+        "table": [
+          [
+            "tuple()",
+            "()",
+            "Empty tuple"
+          ],
+          [
+            "(1, 2, 3)",
+            "(1, 2, 3)",
+            "Tuple with elements"
+          ],
+          [
+            "tuple('hello')",
+            "('h', 'e', 'l', 'l', 'o')",
+            "Tuple from iterable"
+          ]
+        ]
+      },
+      {
+        "title": "Tuple Operations",
+        "docs": "https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences",
+        "description": "Common operations performed on tuples.",
+        "table": [
+          [
+            "(1, 2) + (3, 4)",
+            "(1, 2, 3, 4)",
+            "Concatenation"
+          ],
+          [
+            "(1, 2) * 2",
+            "(1, 2, 1, 2)",
+            "Repetition"
+          ],
+          [
+            "len((1, 2, 3))",
+            "3",
+            "Length"
+          ],
+          [
+            "3 in (1, 2, 3)",
+            "True",
+            "Membership"
+          ],
+          [
+            "max((1, 2, 3))",
+            "3",
+            "Maximum value"
+          ],
+          [
+            "min((1, 2, 3))",
+            "1",
+            "Minimum value"
+          ],
+          [
+            "(1, 2, 3).count(2)",
+            "1",
+            "Count occurrences"
+          ],
+          [
+            "(1, 2, 3).index(2)",
+            "1",
+            "Return index of first occurrence"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Data Structures - Sets",
+    "content": [
+      {
+        "title": "Sets",
+        "docs": "https://docs.python.org/3/tutorial/datastructures.html#sets",
+        "description": "Check if a variable is a set using the isinstance function.",
+        "table": [
+          [
+            "isinstance({1, 2, 3}, set)",
+            "True",
+            ""
+          ],
+          [
+            "isinstance([1, 2, 3], set)",
+            "False",
+            ""
+          ]
+        ]
+      },
+      {
+        "title": "Set Creation",
+        "docs": "https://docs.python.org/3/tutorial/datastructures.html#sets",
+        "description": "Different ways to create sets in Python.",
+        "table": [
+          [
+            "set()",
+            "set()",
+            "Empty set"
+          ],
+          [
+            "{1, 2, 3}",
+            "{1, 2, 3}",
+            "Set with elements"
+          ],
+          [
+            "set('hello')",
+            "{'e', 'h', 'l', 'o'}",
+            "Set from iterable"
+          ],
+          [
+            "{x for x in 'hello' if x not in 'aeiou'}",
+            "{'h', 'l'}",
+            "Set comprehension"
+          ]
+        ]
+      },
+      {
+        "title": "Set Operations",
+        "docs": "https://docs.python.org/3/tutorial/datastructures.html#sets",
+        "description": "Common operations performed on sets.",
+        "table": [
+          [
+            "{1, 2} | {2, 3}",
+            "{1, 2, 3}",
+            "Union"
+          ],
+          [
+            "{1, 2} & {2, 3}",
+            "{2}",
+            "Intersection"
+          ],
+          [
+            "{1, 2} - {2, 3}",
+            "{1}",
+            "Difference"
+          ],
+          [
+            "{1, 2} ^ {2, 3}",
+            "{1, 3}",
+            "Symmetric Difference"
+          ],
+          [
+            "len({1, 2, 3})",
+            "3",
+            "Length"
+          ],
+          [
+            "3 in {1, 2, 3}",
+            "True",
+            "Membership"
+          ],
+          [
+            "max({1, 2, 3})",
+            "3",
+            "Maximum value"
+          ],
+          [
+            "min({1, 2, 3})",
+            "1",
+            "Minimum value"
+          ],
+          [
+            "{1, 2, 3}.add(4)",
+            "{1, 2, 3, 4}",
+            "Add element to set"
+          ],
+          [
+            "{1, 2, 3}.remove(2)",
+            "{1, 3}",
+            "Remove element from set"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Control Flow",
+    "content": [
+      {
+        "title": "If Statements",
+        "docs": "https://docs.python.org/3/tutorial/controlflow.html#if-statements",
+        "description": "Check if a condition is true and execute a block of code accordingly.",
+        "table": [
+          [
+            "x = 5\nif x > 0:\n    print('Positive')",
+            "Positive",
+            ""
+          ],
+          [
+            "x = -5\nif x > 0:\n    print('Positive')",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "title": "If-Else Statements",
+        "docs": "https://docs.python.org/3/tutorial/controlflow.html#if-statements",
+        "description": "Execute one block of code if a condition is true, otherwise execute another block.",
+        "table": [
+          [
+            "x = 5\nif x > 0:\n    print('Positive')\nelse:\n    print('Non-positive')",
+            "Positive",
+            ""
+          ],
+          [
+            "x = -5\nif x > 0:\n    print('Positive')\nelse:\n    print('Non-positive')",
+            "Non-positive",
+            ""
+          ]
+        ]
+      },
+      {
+        "title": "Elif Statements",
+        "docs": "https://docs.python.org/3/tutorial/controlflow.html#if-statements",
+        "description": "Check multiple conditions sequentially and execute the block of code associated with the first true condition.",
+        "table": [
+          [
+            "x = 5\nif x > 0:\n    print('Positive')\nelif x == 0:\n    print('Zero')\nelse:\n    print('Negative')",
+            "Positive",
+            ""
+          ],
+          [
+            "x = 0\nif x > 0:\n    print('Positive')\nelif x == 0:\n    print('Zero')\nelse:\n    print('Negative')",
+            "Zero",
+            ""
+          ],
+          [
+            "x = -5\nif x > 0:\n    print('Positive')\nelif x == 0:\n    print('Zero')\nelse:\n    print('Negative')",
+            "Negative",
+            ""
+          ]
+        ]
+      },
+      {
+        "title": "For Loops",
+        "docs": "https://docs.python.org/3/tutorial/controlflow.html#for-statements",
+        "description": "Iterate over a sequence (e.g., list, tuple, string) and execute a block of code for each element.",
+        "table": [
+          [
+            "for i in [1, 2, 3]:\n    print(i)",
+            "1\n2\n3",
+            ""
+          ],
+          [
+            "for char in 'hello':\n    print(char)",
+            "h\ne\nl\nl\no",
+            ""
+          ]
+        ]
+      },
+      {
+        "title": "While Loops",
+        "docs": "https://docs.python.org/3/tutorial/introduction.html#first-steps-towards-programming",
+        "description": "Repeat a block of code as long as a condition is true.",
+        "table": [
+          [
+            "x = 5\nwhile x > 0:\n    print(x)\n    x -= 1",
+            "5\n4\n3\n2\n1",
+            ""
+          ]
+        ]
+      },
+      {
+        "title": "Break Statement",
+        "docs": "https://docs.python.org/3/tutorial/controlflow.html#break-and-continue-statements-and-else-clauses-on-loops",
+        "description": "Terminate the nearest enclosing loop prematurely.",
+        "table": [
+          [
+            "for i in [1, 2, 3, 4, 5]:\n    if i == 3:\n        break\n    print(i)",
+            "1\n2",
+            ""
+          ]
+        ]
+      },
+      {
+        "title": "Continue Statement",
+        "docs": "https://docs.python.org/3/tutorial/controlflow.html#break-and-continue-statements-and-else-clauses-on-loops",
+        "description": "Skip the rest of the code inside a loop for the current iteration and continue to the next iteration.",
+        "table": [
+          [
+            "for i in [1, 2, 3, 4, 5]:\n    if i == 3:\n        continue\n    print(i)",
+            "1\n2\n4\n5",
+            ""
+          ]
+        ]
+      },
+      {
+        "title": "Pass Statement",
+        "docs": "https://docs.python.org/3/tutorial/controlflow.html#pass-statements",
+        "description": "A null operation; it does nothing. It can be used when a statement is required syntactically but you do not want any command or code to execute.",
+        "table": [
+          [
+            "if True:\n    pass",
+            "",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Best Practices",
+    "content": [
+      {
+        "title": "PEP 8 - Style Guide for Python Code",
+        "docs": "https://www.python.org/dev/peps/pep-0008/",
+        "description": "Follow the guidelines outlined in PEP 8 to write clean, readable, and maintainable Python code.",
+        "table": []
+      },
+      {
+        "title": "Use Snake Case for Variable Names",
+        "docs": "https://www.python.org/dev/peps/pep-0008/#function-and-variable-names",
+        "description": "Use snake_case for variable names to improve readability and consistency with Python conventions.",
+        "table": []
+      },
+      {
+        "title": "Avoid Magic Numbers and Strings",
+        "docs": "https://www.python.org/dev/peps/pep-0008/#magic-numbers",
+        "description": "Avoid using numeric or string literals directly in code without explanation. Define them as constants or variables with descriptive names.",
+        "table": []
+      },
+      {
+        "title": "Document Your Code with Docstrings",
+        "docs": "https://www.python.org/dev/peps/pep-0008/#documentation-strings",
+        "description": "Use docstrings to document your functions, classes, and modules. Provide clear and concise explanations of their purpose, parameters, and return values.",
+        "table": []
+      },
+      {
+        "title": "Modularize Your Code",
+        "docs": "https://www.python.org/dev/peps/pep-0008/#imports",
+        "description": "Break your code into smaller, reusable modules, functions, and classes. This promotes code reusability, maintainability, and readability.",
+        "table": []
+      },
+      {
+        "title": "Write Unit Tests",
+        "docs": "https://docs.python.org/3/library/unittest.html",
+        "description": "Write unit tests for your functions and classes using the built-in `unittest` framework or other testing frameworks like `pytest`. Ensure comprehensive test coverage.",
+        "table": []
+      },
+      {
+        "title": "Optimize Performance",
+        "docs": "https://wiki.python.org/moin/PythonSpeed/PerformanceTips",
+        "description": "Profile your code to identify performance bottlenecks and optimize critical sections. Use efficient algorithms and data structures.",
+        "table": []
+      }
+    ]
+  }
+]

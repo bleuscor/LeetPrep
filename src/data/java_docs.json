@@ -1,0 +1,712 @@
+[
+  {
+    "title": "Java Strings",
+    "content": [
+      {
+        "title": "String Creation",
+        "docs": "https://docs.oracle.com/javase/8/docs/api/java/lang/String.html",
+        "description": "Create strings in Java using the String class constructor or string literals.",
+        "table": [
+          [
+            "String str1 = new String(\"Hello\");",
+            "",
+            "Create a string using the String class constructor."
+          ],
+          [
+            "String str2 = \"World\";",
+            "",
+            "Create a string using a string literal."
+          ]
+        ]
+      },
+      {
+        "title": "String Concatenation",
+        "docs": "https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#concat-java.lang.String-",
+        "description": "Concatenate strings in Java using the concat() method or the '+' operator.",
+        "table": [
+          [
+            "String result = str1.concat(str2);",
+            "",
+            "Concatenate two strings using the concat() method."
+          ],
+          [
+            "String result = str1 + str2;",
+            "",
+            "Concatenate two strings using the '+' operator."
+          ]
+        ]
+      },
+      {
+        "title": "String Length",
+        "docs": "https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#length--",
+        "description": "Get the length of a string in Java using the length() method.",
+        "table": [
+          [
+            "int length = str1.length();",
+            "",
+            "Get the length of the string 'str1'."
+          ]
+        ]
+      },
+      {
+        "title": "String Comparison",
+        "docs": "https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#compareTo-java.lang.String-",
+        "description": "Compare strings in Java using the compareTo() method or the equals() method.",
+        "table": [
+          [
+            "int result = str1.compareTo(str2);",
+            "",
+            "Compare two strings using the compareTo() method."
+          ],
+          [
+            "boolean isEqual = str1.equals(str2);",
+            "",
+            "Check if two strings are equal using the equals() method."
+          ]
+        ]
+      },
+      {
+        "title": "Substring Extraction",
+        "docs": "https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#substring-int-int-",
+        "description": "Extract substrings from a string in Java using the substring() method.",
+        "table": [
+          [
+            "String subStr = str1.substring(1, 3);",
+            "",
+            "Extract a substring from 'str1' starting at index 1 and ending at index 2 (exclusive)."
+          ]
+        ]
+      },
+      {
+        "title": "String Splitting",
+        "docs": "https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#split-java.lang.String-",
+        "description": "Split a string into substrings based on a delimiter using the split() method.",
+        "table": [
+          [
+            "String[] parts = str1.split(\"o\");",
+            "",
+            "Split 'str1' into substrings using 'o' as the delimiter."
+          ]
+        ]
+      },
+      {
+        "title": "String Conversion",
+        "docs": "https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#valueOf-java.lang.Object-",
+        "description": "Convert other data types to strings in Java using the valueOf() method.",
+        "table": [
+          [
+            "String str = String.valueOf(123);",
+            "",
+            "Convert an integer to a string."
+          ]
+        ]
+      },
+      {
+        "title": "String Formatting",
+        "docs": "https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#format-java.lang.String-java.lang.Object...-",
+        "description": "Format strings in Java using the format() method.",
+        "table": [
+          [
+            "String formattedStr = String.format(\"%s %d\", \"Hello\", 123);",
+            "",
+            "Format a string with placeholders."
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Numeric Types",
+    "content": [
+      {
+        "title": "Integer Types",
+        "docs": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html",
+        "description": "Java provides several integer types to represent whole numbers of different sizes.",
+        "table": [
+          [
+            "byte",
+            "-128 to 127",
+            "8-bit signed integer"
+          ],
+          [
+            "short",
+            "-32,768 to 32,767",
+            "16-bit signed integer"
+          ],
+          [
+            "int",
+            "-2^31 to 2^31-1",
+            "32-bit signed integer"
+          ],
+          [
+            "long",
+            "-2^63 to 2^63-1",
+            "64-bit signed integer"
+          ]
+        ]
+      },
+      {
+        "title": "Floating-Point Types",
+        "docs": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html",
+        "description": "Java provides two floating-point types to represent decimal numbers with different precision and range.",
+        "table": [
+          [
+            "float",
+            "",
+            "32-bit single-precision floating-point"
+          ],
+          [
+            "double",
+            "",
+            "64-bit double-precision floating-point"
+          ]
+        ]
+      },
+      {
+        "title": "Arithmetic Operations",
+        "docs": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html",
+        "description": "Perform arithmetic operations such as addition, subtraction, multiplication, and division on numeric types in Java.",
+        "table": [
+          [
+            "int sum = num1 + num2;",
+            "",
+            "Addition"
+          ],
+          [
+            "int difference = num1 - num2;",
+            "",
+            "Subtraction"
+          ],
+          [
+            "int product = num1 * num2;",
+            "",
+            "Multiplication"
+          ],
+          [
+            "int quotient = num1 / num2;",
+            "",
+            "Integer Division"
+          ],
+          [
+            "double result = (double) num1 / num2;",
+            "",
+            "Floating-Point Division"
+          ],
+          [
+            "int remainder = num1 % num2;",
+            "",
+            "Modulus (Remainder)"
+          ]
+        ]
+      },
+      {
+        "title": "Increment and Decrement",
+        "docs": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op1.html",
+        "description": "Increment and decrement numeric values in Java using the increment (++) and decrement (--) operators.",
+        "table": [
+          [
+            "num++;",
+            "",
+            "Increment by 1"
+          ],
+          [
+            "num--;",
+            "",
+            "Decrement by 1"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Java Control Flow",
+    "content": [
+        {
+            "title": "Conditional Statements",
+            "docs": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/if.html",
+            "description": "Execute code based on certain conditions using if, if-else, if-else-if, and switch statements.",
+            "table": [
+                [
+                    "int x = 10;",
+                    "",
+                    "Declare an integer variable 'x' with a value of 10."
+                ],
+                [
+                    "if (x > 0) {...}",
+                    "",
+                    "Check if 'x' is greater than 0."
+                ],
+                [
+                    "else if (x < 0)",
+                    "",
+                    "Check if 'x' is less than 0."
+                ],
+                [
+                    "else {}",
+                    "",
+                    "Does not match any other condition."
+                ]
+            ]
+        },
+        {
+            "title": "Looping Statements",
+            "docs": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/while.html",
+            "description": "Repeat a block of code multiple times using while, do-while, and for loops.",
+            "table": [
+                [
+                    "while (i < 5) {...}",
+                    "",
+                    "Print numbers from 0 to 4 using a while loop."
+                ],
+                [
+                    "do {..} while (i < 5);",
+                    "",
+                    "Print numbers from 0 to 4 using a do-while loop."
+                ],
+                [
+                    "for (int j = 0; j < 5; j++) {...}",
+                    "",
+                    "Print numbers from 0 to 4 using a for loop."
+                ]
+            ]
+        },
+        {
+            "title": "Branching Statements",
+            "docs": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/branch.html",
+            "description": "Control the flow of execution using break and continue statements.",
+            "table": [
+                [
+                    "break",
+                    "",
+                    "Exit the loop when a condition is met."
+                ],
+                [
+                    "continue",
+                    "",
+                    "Skip the iteration when 'i' is equal to 5."
+                ]
+            ]
+        }
+    ]
+},
+  {
+    "title": "Arrays",
+    "content": [
+      {
+        "title": "Array Declaration & Initialization",
+        "docs": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html",
+        "description": "Declare and initialize arrays in Java to store multiple elements of the same type.",
+        "table": [
+          [
+            "int[] numbers = new int[5];",
+            "",
+            "Declare an integer array 'numbers' with a length of 5 elements."
+          ],
+          [
+            "int[] numbers = {1, 2, 3, 4, 5};",
+            "",
+            "Declare and initialize an integer array 'numbers' with values 1, 2, 3, 4, and 5."
+          ],
+          [
+            "String[] names = new String[] {\"Alice\", \"Bob\", \"Carol\"};",
+            "",
+            "Declare and initialize a String array 'names' with values \"Alice\", \"Bob\", and \"Carol\"."
+          ]
+        ]
+      },
+      {
+        "title": "Array Access and Modification",
+        "docs": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html",
+        "description": "Access and modify elements of an array in Java using array indices.",
+        "table": [
+          [
+            "int value = numbers[2];",
+            "",
+            "Access the third element of the 'numbers' array."
+          ],
+          [
+            "numbers[2] = 10;",
+            "",
+            "Modify the value of the third element of the 'numbers' array to 10."
+          ]
+        ]
+      },
+      {
+        "title": "Array Length",
+        "docs": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html",
+        "description": "Get the length of an array in Java using the 'length' property.",
+        "table": [
+          [
+            "int length = numbers.length;",
+            "",
+            "Get the length of the 'numbers' array."
+          ]
+        ]
+      },
+      {
+        "title": "Iterating Over Arrays",
+        "docs": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html",
+        "description": "Iterate over elements of an array in Java using loops.",
+        "table": [
+          [
+            "for (int i = 0; i < numbers.length; i++) {...}",
+            "",
+            "Iterate over the 'numbers' array using a for loop."
+          ]
+        ]
+      },
+      {
+        "title": "Array Copying",
+        "docs": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html",
+        "description": "Copy elements of one array to another in Java using the 'System.arraycopy()' method or 'Arrays.copyOf()' method.",
+        "table": [
+          [
+            "int[] copy = new int[numbers.length];",
+            "",
+            "Create a new array 'copy' with the same length as the 'numbers' array."
+          ],
+          [
+            "System.arraycopy(numbers, 0, copy, 0, numbers.length);",
+            "",
+            "Copy elements from the 'numbers' array to the 'copy' array."
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "title": "ArrayList",
+    "content": [
+      {
+        "title": "ArrayList Declaration & Initialization",
+        "docs": "https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html",
+        "description": "Declare and initialize ArrayList in Java to store a dynamic list of elements.",
+        "table": [
+          [
+            "ArrayList<Integer> numbers = new ArrayList<>();",
+            "",
+            "Declare an ArrayList 'numbers' to store Integer elements."
+          ],
+          [
+            "ArrayList<String> names = new ArrayList<>(Arrays.asList(\"Alice\", \"Bob\", \"Carol\"));",
+            "",
+            "Declare and initialize an ArrayList 'names' with values \"Alice\", \"Bob\", and \"Carol\"."
+          ]
+        ]
+      },
+      {
+        "title": "ArrayList Operations",
+        "docs": "https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html",
+        "description": "Perform various operations on ArrayList in Java such as adding, removing, accessing elements, and checking size.",
+        "table": [
+          [
+            "numbers.add(10);",
+            "",
+            "Add an element '10' to the end of the 'numbers' ArrayList."
+          ],
+          [
+            "names.remove(\"Bob\");",
+            "",
+            "Remove the element \"Bob\" from the 'names' ArrayList."
+          ],
+          [
+            "String name = names.get(0);",
+            "",
+            "Get the first element of the 'names' ArrayList."
+          ],
+          [
+            "int size = numbers.size();",
+            "",
+            "Get the size of the 'numbers' ArrayList."
+          ]
+        ]
+      },
+      {
+        "title": "Iterating Over ArrayList",
+        "docs": "",
+        "description": "Iterate over elements of ArrayList in Java using loops or the forEach() method.",
+        "table": [
+          [
+            "for (int i = 0; i < numbers.size(); i++) {...}",
+            "",
+            "Iterate over the 'numbers' ArrayList using a for loop."
+          ],
+          [
+            "for (String name : names) {...}",
+            "",
+            "Iterate over the 'names' ArrayList using a for-each loop."
+          ],
+          [
+            "names.forEach(name -> println(name));",
+            "",
+            "Iterate over the 'names' ArrayList using the forEach() method and a lambda expression."
+          ]
+        ]
+      },
+      {
+        "title": "ArrayList Sorting",
+        "docs": "https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#sort-java.util.List-",
+        "description": "Sort elements of ArrayList in Java using the Collections.sort() method.",
+        "table": [
+          [
+            "Collections.sort(numbers);",
+            "",
+            "Sort the elements of the 'numbers' ArrayList in natural order."
+          ]
+        ]
+      },
+      {
+        "title": "ArrayList Conversion",
+        "docs": "",
+        "description": "Convert ArrayList to an array or vice versa in Java.",
+        "table": [
+          [
+            "Integer[] arr = numbers.toArray(new Integer[numbers.size()]);",
+            "",
+            "Convert the 'numbers' ArrayList to an Integer array."
+          ],
+          [
+            "ArrayList<Integer> list = new ArrayList<>(Arrays.asList(arr));",
+            "",
+            "Convert an Integer array 'arr' to an ArrayList."
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Stack",
+    "content": [
+      {
+        "title": "Stack Declaration & Initialization",
+        "docs": "https://docs.oracle.com/javase/8/docs/api/java/util/Stack.html",
+        "description": "Declare and initialize a Stack in Java to represent a last-in, first-out (LIFO) stack of objects.",
+        "table": [
+          [
+            "Stack<Integer> stack = new Stack<>();",
+            "",
+            "Declare a Stack 'stack' to store Integer elements."
+          ]
+        ]
+      },
+      {
+        "title": "Stack Operations",
+        "docs": "https://docs.oracle.com/javase/8/docs/api/java/util/Stack.html",
+        "description": "Perform various operations on Stack in Java such as pushing, popping, peeking, and checking size.",
+        "table": [
+          [
+            "stack.push(10);",
+            "",
+            "Push an element '10' onto the stack."
+          ],
+          [
+            "int topElement = stack.pop();",
+            "",
+            "Pop the top element from the stack."
+          ],
+          [
+            "int topElement = stack.peek();",
+            "",
+            "Get the top element of the stack without removing it."
+          ],
+          [
+            "boolean isEmpty = stack.isEmpty();",
+            "",
+            "Check if the stack is empty."
+          ],
+          [
+            "int size = stack.size();",
+            "",
+            "Get the size of the stack."
+          ]
+        ]
+      },
+      {
+        "title": "Iterating Over Stack",
+        "docs": "https://docs.oracle.com/javase/8/docs/api/java/util/Stack.html",
+        "description": "Iterate over elements of Stack in Java using the enhanced for loop or the forEach() method.",
+        "table": [
+          [
+            "for (Integer element : stack) {...}",
+            "",
+            "Iterate over elements of the stack using the enhanced for loop."
+          ],
+          [
+            "stack.forEach(element -> println(element));",
+            "",
+            "Iterate over elements of the stack using the forEach() method and a lambda expression."
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "title": "HashMap",
+    "content": [
+      {
+        "title": "HashMap Declaration & Initialization",
+        "docs": "https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html",
+        "description": "Declare and initialize HashMap in Java to store key-value pairs.",
+        "table": [
+          [
+            "HashMap<String, Integer> ages = new HashMap<>();",
+            "",
+            "Declare a HashMap 'ages' to store String keys and Integer values."
+          ],
+          [
+            "HashMap<Integer, String> students = new HashMap<>();",
+            "",
+            "Declare a HashMap 'students' to store Integer keys and String values."
+          ]
+        ]
+      },
+      {
+        "title": "HashMap Operations",
+        "docs": "https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html",
+        "description": "Perform various operations on HashMap in Java such as adding, removing, accessing elements, and checking size.",
+        "table": [
+          [
+            "ages.put(\"Alice\", 25);",
+            "",
+            "Add a key-value pair ('Alice', 25) to the 'ages' HashMap."
+          ],
+          [
+            "students.remove(101);",
+            "",
+            "Remove the key-value pair with key 101 from the 'students' HashMap."
+          ],
+          [
+            "int age = ages.get(\"Bob\");",
+            "",
+            "Get the value associated with key \"Bob\" from the 'ages' HashMap."
+          ],
+          [
+            "boolean containsKey = students.containsKey(102);",
+            "",
+            "Check if the 'students' HashMap contains key 102."
+          ],
+          [
+            "int size = ages.size();",
+            "",
+            "Get the size of the 'ages' HashMap."
+          ]
+        ]
+      },
+      {
+        "title": "Iterating Over HashMap",
+        "docs": "",
+        "description": "Iterate over key-value pairs of HashMap in Java using the entrySet() method or keySet() method.",
+        "table": [
+          [
+            "for (Map.Entry<String, Integer> entry : ages.entrySet()) {",
+            "",
+            "Iterate over key-value pairs of the 'ages' HashMap using entrySet()."
+          ],
+          [
+            "    String name = entry.getKey();",
+            "",
+            "Get the key of the current entry."
+          ],
+          [
+            "    int age = entry.getValue();",
+            "",
+            "Get the value of the current entry."
+          ],
+          [
+            "for (String name : students.keySet()) {",
+            "",
+            "Iterate over keys of the 'students' HashMap using keySet()."
+          ],
+          [
+            "    String studentName = students.get(name);",
+            "",
+            "Get the value associated with the current key."
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "title": "HashSet",
+    "content": [
+      {
+        "title": "HashSet Declaration & Initialization",
+        "docs": "https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html",
+        "description": "Declare and initialize HashSet in Java to store a collection of unique elements.",
+        "table": [
+          [
+            "HashSet<Integer> numbers = new HashSet<>();",
+            "",
+            "Declare a HashSet 'numbers' to store Integer elements."
+          ],
+          [
+            "HashSet<String> names = new HashSet<>();",
+            "",
+            "Declare a HashSet 'names' to store String elements."
+          ]
+        ]
+      },
+      {
+        "title": "HashSet Operations",
+        "docs": "https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html",
+        "description": "Perform various operations on HashSet in Java such as adding, removing, checking existence, and checking size.",
+        "table": [
+          [
+            "numbers.add(10);",
+            "",
+            "Add an element '10' to the 'numbers' HashSet."
+          ],
+          [
+            "names.remove(\"Alice\");",
+            "",
+            "Remove the element \"Alice\" from the 'names' HashSet."
+          ],
+          [
+            "boolean contains = names.contains(\"Bob\");",
+            "",
+            "Check if the 'names' HashSet contains the element \"Bob\"."
+          ],
+          [
+            "int size = numbers.size();",
+            "",
+            "Get the size of the 'numbers' HashSet."
+          ]
+        ]
+      },
+      {
+        "title": "Iterating Over HashSet",
+        "docs": "https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html",
+        "description": "Iterate over elements of HashSet in Java using the enhanced for loop or the forEach() method.",
+        "table": [
+          [
+            "for (Integer num : numbers) {...}",
+            "",
+            "Iterate over the 'numbers' HashSet using the enhanced for loop."
+          ],
+          [
+            "names.forEach(name -> println(name));",
+            "",
+            "Iterate over the 'names' HashSet using the forEach() method and a lambda expression."
+          ]
+        ]
+      },
+      {
+        "title": "HashSet Conversion",
+        "docs": "https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html",
+        "description": "Convert HashSet to an array or vice versa in Java.",
+        "table": [
+          [
+            "Integer[] arr = numbers.toArray(new Integer[numbers.size()]);",
+            "",
+            "Convert the 'numbers' HashSet to an Integer array."
+          ],
+          [
+            "HashSet<Integer> set = new HashSet<>(Arrays.asList(arr));",
+            "",
+            "Convert an Integer array 'arr' to a HashSet."
+          ]
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "name": "LeetPrep",
+  "description": "Handy Interview Preparation for Developers",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "author": "Onsites.fyi",
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon128.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "icon128.png"
+  }
+}

@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.App {
+    min-height: 600px;
+    min-width: 700px;
+    width: 700px;
+    border: 2px solid;
+    @apply dark:border-zinc-800 border-zinc-200;
+}
+
+.card {
+    @apply dark:border-zinc-800 border-zinc-200 border-2 rounded-xl;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    @apply dark:bg-zinc-700 bg-zinc-500;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    @apply dark:bg-zinc-500 bg-zinc-300;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    @apply dark:bg-zinc-400 bg-zinc-200;
+}
+
+.copy-container-translate {
+    transform: translateY(60px);
+}
