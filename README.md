@@ -41,6 +41,11 @@ I built LeetPrep to help me prepare for technical interviews. Having easy access
 Star [this repository](hhttps://github.com/bleuscor/LeetPrep/) for further development of features. If you want a particular feature, simply [request](https://github.com/bleuscor/LeetPrep/labels/feature) for it!
 
 
+<div style="display: flex; justify-content: center; gap: 20px;">
+    <img src="https://github.com/bleuscor/LeetPrep/assets/9091157/5849244b-8297-4375-9867-73084cd62d28" alt="Hero1" width="450" />
+    <img src="https://github.com/bleuscor/LeetPrep/assets/9091157/ee9469d8-8f6e-4063-aaf6-1dac9aac372f" alt="Hero2" width="450" />
+</div>
+
 
 ## Contributing
 
