@@ -36,7 +36,7 @@
 <li>Quick access to a curated list of popular interview questions (Blind 75)</li>
 </ul>
 
-I built LeetPrep to help me prepare for technical interviews. Having easy access to a curated set of resources was very useful while doing leetcode problems or simply studying for interviews. The one click access to the handy resources is amazing!
+Having easy access to a curated set of resources is very useful while doing leetcode problems or simply studying for interviews. The one click access to the handy resources is a massive improvement for preparation!
 
 Star [this repository](hhttps://github.com/bleuscor/LeetPrep/) for further development of features. If you want a particular feature, simply [request](https://github.com/bleuscor/LeetPrep/labels/feature) for it!
 
